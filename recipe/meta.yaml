@@ -22,16 +22,21 @@ requirements:
     - pip
     - python
     - setuptools
+    - wheel
   run:
     - python
 
 test:
   imports:
     - validate_email
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/syrusakbary/validate_email
-  license: LGPL
+  license: LGPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
   description: 'Validate_email is a package for Python that check if an email is valid, properly formatted and really exists.'
