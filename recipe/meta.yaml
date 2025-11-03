@@ -15,7 +15,7 @@ build:
   noarch: python
   skip: True # [not linux64]
   number: 3
-  script: python -m pip install --no-deps --ignore-installed . --no-build-isolation
+  script: {{ PYTHON }} -m pip install --no-deps --ignore-installed . --no-build-isolation
 
 requirements:
   host:
