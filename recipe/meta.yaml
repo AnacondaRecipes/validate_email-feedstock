@@ -40,9 +40,7 @@ about:
   license_family: GPL
   license_file: LICENSE
   description: 'Validate_email is a package for Python that check if an email is valid, properly formatted and really exists.'
-  summary: 'Validate_email is a package for Python that check if an email is
-            valid, properly formatted and really exists.'
-
+  summary: 'Validate_email is a package for Python that check if an email is valid, properly formatted and really exists.'
   dev_url: https://github.com/syrusakbary/validate_email
   doc_url: https://github.com/syrusakbary/validate_email
 
