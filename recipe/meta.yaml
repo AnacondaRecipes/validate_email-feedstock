@@ -44,6 +44,7 @@ about:
   dev_url: https://github.com/syrusakbary/validate_email
   doc_url: https://github.com/syrusakbary/validate_email
 
+
 extra:
   skip-lints:
     - host_section_needs_exact_pinnings
