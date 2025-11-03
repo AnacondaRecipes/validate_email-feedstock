@@ -13,8 +13,9 @@ source:
 
 build:
   noarch: python
+  skip: True # [not linux64]
   number: 3
-  script: python -m pip install --no-deps --ignore-installed .
+  script: python -m pip install --no-deps --ignore-installed . --no-build-isolation
 
 requirements:
   host:
@@ -33,12 +34,23 @@ about:
   license: LGPL
   license_family: GPL
   license_file: LICENSE
+  description: 'Validate_email is a package for Python that check if an email is valid, properly formatted and really exists.'
   summary: 'Validate_email is a package for Python that check if an email is
             valid, properly formatted and really exists.'
 
   dev_url: https://github.com/syrusakbary/validate_email
+  doc_url: https://github.com/syrusakbary/validate_email
 
 extra:
+  skip-lints:
+    - host_section_needs_exact_pinnings
+    - avoid_noarch
+  anaconda-services:
+    ref: https://anaconda.zendesk.com/agent/tickets/66289
+    reason: Needed for flex-swagger prance=>flex-swagger
+    recipe-maintainers:
+       - bkreider
+
   recipe-maintainers:
     - nikicc
     - mariusvniekerk
